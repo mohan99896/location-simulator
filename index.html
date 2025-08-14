@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Live Location Tracker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>
+body, html { height:100%; margin:0; font-family:sans-serif; }
+#map { height:85%; width:100%; }
+#controls { height:15%; padding:10px; background:#f7f7f7; font-size:14px; display:flex; justify-content:space-between; align-items:center; }
+button { padding:5px 10px; font-size:14px; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div id="controls">
+  <div>Lat: <span id="lat">--</span>, Lon: <span id="lon">--</span></div>
+  <div>
+    <button id="liveBtn">Live Mode</button>
+    <button id="simBtn">Simulator Mode</button>
+  </div>
+</div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
